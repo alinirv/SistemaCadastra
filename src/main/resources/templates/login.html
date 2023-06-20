@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="bulma.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/css/bulma.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
     <header>
-        <h1 class="title is-1">Login</h1>
+        <h1 class="title is-1">IFSP</h1>
     </header>
-
-
+    <br>
     <div class="container">
-        <form action="post">
+        <h2 class="title">Bem-Vindo</h2>
+        <p>SISTEMA  -  SECRETÁRIA</p>
+    </div>
+    <div class="container">
+        <form action="post" id="formulario" >
+            <h2 class="title">Login</h2>
             <section>
                 <label for="usuario">Usuário:</label>
                 <input type="text" class="input is-primary" id="usuario"
@@ -25,12 +29,16 @@
                 <input type="password" class="input is-primary" id="senha"
                 placeholder="Senha" autofocus="autofocus"><br>
             </section>
-            <button class="button is-primary">Logar</button>
+            <div class="wrapper">
+                <a href="cadastro/aluno.html"><span>Logar</span></a>
+            </div>
+
+            <!--<button class="button is-primary1">Logar</button>-->
         </form>
     </div>
 
     <footer>
-        <button class="button is-link">Visualizar cursos</button>
+        <a href="visualizarAlunos.html"><button  class="button is-link">Visualizar cursos</button></a>
     </footer>
 
 </body>

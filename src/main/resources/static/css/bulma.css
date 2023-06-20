@@ -1011,6 +1011,14 @@ fieldset[disabled] .button.is-dark.is-inverted.is-outlined {
   color: #fff;
 }
 
+.button.is-primary1 {
+  background-color: #247D9E;
+  border-color: transparent;
+  color: #fff;
+  margin-top: 4.5%;
+  margin-left: 40%;
+}
+
 .button.is-primary:hover, .button.is-primary.is-hovered {
   background-color: #00c4a7;
   border-color: transparent;
@@ -3422,7 +3430,7 @@ fieldset[disabled] .select select:-ms-input-placeholder,
 }
 
 .is-primary.input, .is-primary.textarea {
-  border-color: #00d1b2;
+  border-color: #247D9E;
 }
 
 .is-primary.input:focus, .is-primary.textarea:focus, .is-primary.is-focused.input, .is-primary.is-focused.textarea, .is-primary.input:active, .is-primary.textarea:active, .is-primary.is-active.input, .is-primary.is-active.textarea {
