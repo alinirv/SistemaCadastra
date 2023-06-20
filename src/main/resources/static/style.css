@@ -1,0 +1,49 @@
+#usuario{
+    width: 25%;
+    margin-left: 5px;
+}
+#senha{
+    width: 25%;
+    margin-left: 15px;
+}
+
+section{
+    margin-top: 5%;
+}
+
+*{
+    margin-left: 1%;
+}
+
+button{
+    margin-left: 25%;
+    margin-top: 1%;
+}
+
+.container {
+    text-align: center;
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 15%;
+}
+
+h1{
+    text-align: center;
+}
+
+footer{
+    margin-top: 10%;
+    text-align: center;
+    width: 700px; 
+    margin-left: 546px;
+    margin-right: auto; 
+}
+
+.tabela{
+    text-align: center;
+    width: 800px; 
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 15%;
+}
