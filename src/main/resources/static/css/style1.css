@@ -111,3 +111,15 @@
   background-color: #04AA6D;
   color: white;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #247D9E;
+    color: white;
+    text-align: center;
+    font-size: 9px;
+}
+
