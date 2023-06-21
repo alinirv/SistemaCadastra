@@ -1,19 +1,22 @@
 package br.edu.ifsp.pw3.cadastra.model.domain;
+import java.sql.Date;
 
-public class Student {
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "alunos")
+public class Student extends AbstractEntity<Long>{
+
+    @Column(name = "idStudent", nullable = false, unique = true)
     private Integer idStudent;
+
+    @Column(name = "nameStudent", nullable = false, unique = false)
     private String nameStudent;
-    private String dateBirthStudent;
 
-    public Student() {
-    }
+    @Column(name = "dateBirthStudent", nullable = false)
+    private Date dateBirthStudent;
 
-    public Student(Integer idStudent, String nameStudent, String dateBirthStudent) {
-        this.idStudent = idStudent;
-        this.nameStudent = nameStudent;
-        this.dateBirthStudent = dateBirthStudent;
-    }
-    
+
     public Integer getIdStudent() {
         return idStudent;
     }
@@ -26,10 +29,10 @@ public class Student {
     public void setNameStudent(String nameStudent) {
         this.nameStudent = nameStudent;
     }
-    public String getDateBirthStudent() {
+    public Date getDateBirthStudent() {
         return dateBirthStudent;
     }
-    public void setDateBirthStudent(String dateBirthStudent) {
+    public void setDateBirthStudent(Date dateBirthStudent) {
         this.dateBirthStudent = dateBirthStudent;
     }
 }

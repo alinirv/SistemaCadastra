@@ -1,20 +1,23 @@
 package br.edu.ifsp.pw3.cadastra.model.domain;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "cursos")
 public class Course {
+
+    @Column(name = "idCourse", nullable = false, unique = true)
     private Integer idCourse;
+
+    @Column(name = "timeCourse", nullable = false)
     private String timeCourse;
+
+    @Column(name = "categoryCourse", nullable = false)
     private String categoryCourse;
+
+    @Column(name = "descriptionCourse", nullable = false)
     private String descriptionCourse;
 
-    public Course() {
-    }
-
-    public Course(Integer idCourse, String timeCourse, String categoryCourse, String descriptionCourse) {
-        this.idCourse = idCourse;
-        this.timeCourse = timeCourse;
-        this.categoryCourse = categoryCourse;
-        this.descriptionCourse = descriptionCourse;
-    }
 
     public Integer getIdCourse() {
         return idCourse;
